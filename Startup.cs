@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 
+
 namespace TechTestPaymentApi
 {
     public class Startup
@@ -18,12 +19,14 @@ namespace TechTestPaymentApi
 
         public void ConfigureServices(IServiceCollection services)
         {
+
+
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Tech Test Payment API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "MinhaApiVendas", Version = "v1" });
             });
         }
-
+        
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseSwagger();

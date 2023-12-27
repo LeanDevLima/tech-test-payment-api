@@ -27,39 +27,45 @@ public class VendasController : ControllerBase
         return Ok(venda);
     }
 
-[HttpPatch("{id}/status")]
-public IActionResult AtualizarStatusVenda(int id, [FromBody] string novoStatus)
-{
-    var venda = vendas.FirstOrDefault(v => v.Id == id);
-    if (venda == null)
-        return NotFound();
+    [HttpGet]
+        public IActionResult ListarVendas()
+        {
+            return Ok(vendas);
+        }
 
-    switch (venda.Status)
+    [HttpPatch("{id}/status")]
+    public IActionResult AtualizarStatusVenda(int id, [FromBody] string novoStatus)
     {
-        case "Aguardando pagamento":
-            if (novoStatus == "Pagamento Aprovado" || novoStatus == "Cancelada")
-                venda.Status = novoStatus;
-            else
-                return BadRequest("Transição de status inválida.");
-            break;
-        case "Pagamento Aprovado":
-            if (novoStatus == "Enviado para Transportadora" || novoStatus == "Cancelada")
-                venda.Status = novoStatus;
-            else
-                return BadRequest("Transição de status inválida.");
-            break;
-        case "Enviado para Transportadora":
-            if (novoStatus == "Entregue")
-                venda.Status = novoStatus;
-            else
-                return BadRequest("Transição de status inválida.");
-            break;
-        default:
-            return BadRequest("Status inválido.");
-    }
+        var venda = vendas.FirstOrDefault(v => v.Id == id);
+        if (venda == null)
+            return NotFound();
 
-    return Ok(venda);
-}
+        switch (venda.Status)
+        {
+            case "Aguardando pagamento":
+                if (novoStatus == "Pagamento Aprovado" || novoStatus == "Cancelada")
+                    venda.Status = novoStatus;
+                else
+                    return BadRequest("Transição de status inválida.");
+                break;
+            case "Pagamento Aprovado":
+                if (novoStatus == "Enviado para Transportadora" || novoStatus == "Cancelada")
+                    venda.Status = novoStatus;
+                else
+                    return BadRequest("Transição de status inválida.");
+                break;
+            case "Enviado para Transportadora":
+                if (novoStatus == "Entregue")
+                    venda.Status = novoStatus;
+                else
+                    return BadRequest("Transição de status inválida.");
+                break;
+            default:
+                return BadRequest("Status inválido.");
+        }
+
+        return Ok(venda);
+    }
 
     [HttpDelete("{id}")]
     public IActionResult DeletarVenda(int id)
