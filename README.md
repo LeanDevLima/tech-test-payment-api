@@ -99,4 +99,10 @@ Segue as evidências das alterações dos status:
 <img src="Evidencias\HttpPatch_status3.jpg">
 
 
+## CONECTE-SE COMIGO
 
+[Meu Perfil no LinkedIn](https://www.linkedin.com/in/leanderson-dias-de-lima/)
+
+[github.com/LeanDevLima](github.com/LeanDevLima)
+
+[https://github.com/LeanLima7](https://github.com/LeanLima7)
