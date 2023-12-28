@@ -103,6 +103,6 @@ Segue as evidências das alterações dos status:
 
 [Meu Perfil no LinkedIn](https://www.linkedin.com/in/leanderson-dias-de-lima/)
 
-[github.com/LeanDevLima](github.com/LeanDevLima)
+[github.com/LeanDevLima](https://github.com/LeanDevLima)
 
-[https://github.com/LeanLima7](https://github.com/LeanLima7)
+[github.com/LeanLima7](https://github.com/LeanLima7)
