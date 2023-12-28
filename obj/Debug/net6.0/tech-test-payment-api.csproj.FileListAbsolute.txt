@@ -25,3 +25,5 @@ C:\Users\Leanderson\OneDrive\Documentos\GitHub\tech-test-payment-api\obj\Debug\n
 C:\Users\Leanderson\OneDrive\Documentos\GitHub\tech-test-payment-api\obj\Debug\net6.0\ref\tech-test-payment-api.dll
 C:\Users\Leanderson\OneDrive\Documentos\GitHub\tech-test-payment-api\obj\Debug\net6.0\tech-test-payment-api.pdb
 C:\Users\Leanderson\OneDrive\Documentos\GitHub\tech-test-payment-api\obj\Debug\net6.0\tech-test-payment-api.genruntimeconfig.cache
+C:\Users\Leanderson\OneDrive\Documentos\GitHub\tech-test-payment-api\bin\Debug\net6.0\tech-test-payment-api.xml
+C:\Users\Leanderson\OneDrive\Documentos\GitHub\tech-test-payment-api\obj\Debug\net6.0\tech-test-payment-api.xml

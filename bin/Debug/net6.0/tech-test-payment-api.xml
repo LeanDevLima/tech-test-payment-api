@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>tech-test-payment-api</name>
+    </assembly>
+    <members>
+        <member name="P:VendaModel.Status">
+            Status da venda.
+            As únicas opções possíveis são:
+            "Aguardando pagamento"
+            "Pagamento Aprovado"
+            "Enviado para Transportadora"
+            "Entregue" e
+            "Cancelada"
+        </member>
+    </members>
+</doc>
