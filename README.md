@@ -42,15 +42,15 @@
 
 - Demonstração do POST:
 
-<img src="Evidencias\HttpPOST.jpg">
+<img src="Evidencias\HttpPost.jpg">
 
 - Demonstração do GET(geral):
 
-<img src="Evidencias\HttpGET.jpg">
+<img src="Evidencias\HttpGet.jpg">
 
 - Demonstração do GET(ID):
 
-<img src="Evidencias\HttpGET_Id.jpg">
+<img src="Evidencias\HttpGet_Id.jpg">
 
 - Demonstração do DELETE(ID):
 
